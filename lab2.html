@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Обратная связь</title>
+  <style>
+   body {
+    margin: 0;
+   }
+   .img1{
+   }
+   .feedback {
+    border-radius: 0 30px 30px 0;
+    width: 300px;
+    background: LightGoldenRodYellow;
+    position: fixed;
+    min-height: 50px;
+    top: 500px; left: -320px;
+    border-right: 40px solid #F08080;
+    padding: 10px;
+    transition: left 1s;
+   }
+
+   .feedback::after {
+    float: left;
+    content: 'TESTEST';
+    color: #000;
+    position: absolute;
+    right: -50px; bottom: 40px;
+    transform: rotate(-90deg); /
+    -webkit-transform: rotate(-90deg);
+   }
+   .feedback:hover {
+    left: 0;
+   }
+  </style>
+ </head>
+ <body>
+
+<div>
+<img class="img1"src="http://htmlbook.ru/files/images/css/css_float.png">
+
+</div>
+  <div class="feedback">
+    TESTTESTTESTTESTTESTTESTTESTTEST
+    TESTTESTTESTTESTTESTTESTTESTTEST
+    TESTTESTTESTTESTTESTTESTTESTTEST
+    TESTTESTTESTTESTTESTTESTTESTTEST
+  </div>
+<div class="ll">
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+  <p>text</p>
+</div>
+ </body>
+</html>
